@@ -25,5 +25,5 @@ jobs:
         cd ./python
         
         docker login --username=vinnydazzle --password=${{ secrets.DOCKERPW }}
-        docker image build -t [your dockerhub username here]/gitops:hellov1.1 .
-        docker push [your docker hub username here]/gitops:hellov1.1
+        docker image build -t docker push vinnydazzle/gitops:hellov1.1 .
+        docker push vinnydazzle/gitops:hellov1.1
